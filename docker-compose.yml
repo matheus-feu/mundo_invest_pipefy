@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    container_name: mundoinvest-api
+    ports:
+      - "8000:8000"
+    environment:
+      - pipefy_token=${pipefy_token}
+      - pipefy_api_url=${pipefy_api_url}
+      - pipefy_pipe_id=${pipefy_pipe_id}
+      - database_url=sqlite:///./sql_app.db
+    volumes:
+      - .:/app
+    restart: unless-stopped
