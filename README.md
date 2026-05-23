@@ -16,7 +16,7 @@ API em Python (FastAPI) para gerenciamento de clientes e simulação de integra�
 
 1. Clone o repositório:
    ```bash
-   git clone 
+   git clone https://github.com/matheus-feu/mundo_invest_pipefy.git
     cd mundo-invest-backend
     ```
 
